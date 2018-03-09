@@ -1,0 +1,59 @@
+﻿<Window x:Class="FarmaciaBien.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FarmaciaBien"
+        mc:Ignorable="d"
+        Title="Farmacia ''Menú''" Height="350" Width="738">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagenes/fondo1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label  HorizontalAlignment="Center" FontSize="38" Grid.Column="0" Grid.Row="0" Foreground="White" FontStyle="Italic" FontWeight="Bold" FontFamily="Lucida Calligraphy">Farmacia "Mi querido Enfermito"</Label>
+        <WrapPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="140" Width="140">
+            <Image Source="/Imagenes/fondo2.jpg" ></Image>
+        </WrapPanel>
+        <Label Grid.Column="0" Grid.Row="2" FontSize="25" HorizontalAlignment="Center" Foreground="White" Margin="328,4" Width="74">Menú</Label>
+        <WrapPanel HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" Margin="102,3" Width="526" >
+            <Button  x:Name="btnVenta" Click="btnVenta_Click_1" Margin="10" Width="85" Foreground="#FF645353" Background="#FF382B2B" >
+                <StackPanel Orientation="Horizontal">
+                    <Label FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="14">Venta</Label>
+                    <Image Source="/Imagenes/report_disk.png" Height="16"></Image>
+                </StackPanel>
+            </Button>
+            <Button  Background="#FF979797" x:Name="btnEmpleado" Click="btnEmpleado_Click" Margin="10" Width="85" Foreground="#FF251E1E">
+                <StackPanel Orientation="Horizontal" Background="#FF382B2B">
+                    <Label FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="14">Empleado</Label>
+                    <Image  Source="/Imagenes/user_suit.png" Height="16"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnCliente" Click="btnCliente_Click" Margin="10" Width="85" Foreground="#FF251E1E" Background="#FF382B2B" >
+                <StackPanel Orientation="Horizontal">
+                    <Label FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="14">Cliente</Label>
+                    <Image Source="/Imagenes/user.png" Height="16"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnProductos" Click="btnProductos_Click"  Background="#FF979797" Margin="10" Width="85" Foreground="#FF251E1E" >
+                <StackPanel Orientation="Horizontal" Background="#FF382B2B">
+                    <Label FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="14">Productos</Label>
+                    <Image Source="/Imagenes/bell.png" Height="16"></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnCategoria" Click="btnCategoria_Click"  Margin="10" Width="85" Background="#FF979797" Foreground="#FF251E1E" >
+                <StackPanel Orientation="Horizontal" Background="#FF382B2B">
+                    <Label FontWeight="Bold" Foreground="White" FontFamily="Segoe UI Semilight" FontSize="14">Categoria</Label>
+                    <Image Source="/Imagenes/book_open.png" Height="16"></Image>
+                </StackPanel>
+            </Button>
+        </WrapPanel>
+    </Grid>
+</Window>
